@@ -6,7 +6,7 @@
 
       <div class="flex items-center my-1">
         { #each projectData.stacks as stack }
-          <i class="devicon-{ stack.toLowerCase() }-plain colored mx-1"
+          <i class="devicon-{ stack.toLowerCase() }-original devicon-{ stack.toLowerCase() }-plain colored mx-1"
              style="font-size: 70%"
              title={ stack } />
         { /each }
@@ -28,11 +28,14 @@
 
     <div class="text-zinc-500 mt-1">
       <span>{ buildYearRangeString(projectData.year_from, projectData.year_to) }</span>
-      &bull;
-      <a href={ projectData.repositoryUrl } class="inline-block">
-        <i class="devicon-{ getSourceRepoPlatformFromUrl(projectData.repositoryUrl) }-plain" />
-        <span>{ getGitHubRepoShorthand(projectData.repositoryUrl) }</span>
-      </a>
+
+      { #if projectData.repositoryUrl }
+        &bull;
+        <a href={ projectData.repositoryUrl } class="inline-block">
+          <i class="devicon-{ getSourceRepoPlatformFromUrl(projectData.repositoryUrl) }-plain" />
+          <span>{ getGitHubRepoShorthand(projectData.repositoryUrl) }</span>
+        </a>
+      { /if }
     </div>
   </div>
 
