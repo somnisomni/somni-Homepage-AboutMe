@@ -12,3 +12,21 @@ html, body {
   padding: 0;
   margin: 0;
 }
+
+small {
+  @apply inline;
+  font-size: smaller;
+}
+
+/* placeholder for missing devicon */
+.devicon-wpf-plain {
+  font-weight: 900;
+}
+
+.devicon-wpf-plain:before {
+  content: "WPF";
+}
+
+.devicon-wpf-plain.colored {
+  color: #1384c8; /* Same with dot-net */
+}

@@ -6,6 +6,7 @@
 <slot />
 
 <script lang="ts">
+import "devicon";
 import "@/styles/main.css";
 
 import { onMount } from "svelte";
