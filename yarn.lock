@@ -996,6 +996,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"devicon@npm:^2.15.1":
+  version: 2.15.1
+  resolution: "devicon@npm:2.15.1"
+  checksum: dfdc93270f97acd4954ab6c9d67a3f1105851b81ed73a5ec340046af8a2414b834f30b233294654d4afbbb95c30dd594bf2590182658c5529bee3073110e5448
+  languageName: node
+  linkType: hard
+
 "didyoumean@npm:^1.2.2":
   version: 1.2.2
   resolution: "didyoumean@npm:1.2.2"
@@ -2704,6 +2711,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^5.45.0
     "@typescript-eslint/parser": ^5.45.0
     autoprefixer: ^10.4.13
+    devicon: ^2.15.1
     eslint: ^8.28.0
     eslint-plugin-svelte3: ^4.0.0
     postcss: ^8.4.20

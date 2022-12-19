@@ -11,6 +11,7 @@
 		"lint": "eslint ."
 	},
 	"dependencies": {
+		"devicon": "^2.15.1",
 		"webfontloader": "^1.6.28"
 	},
 	"devDependencies": {
