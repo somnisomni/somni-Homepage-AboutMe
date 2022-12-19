@@ -6,8 +6,7 @@
 <slot />
 
 <script lang="ts">
-import "normalize.css";
-import "@/styles/main.scss";
+import "@/styles/main.css";
 
 import { onMount } from "svelte";
 import loadWebFont from "@/lib/webfontloader";
