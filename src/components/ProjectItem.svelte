@@ -1,4 +1,4 @@
-<section class="flex flex-col md:p-6 p-4 m-4 bg-white transition-shadow duration-300 shadow-lg hover:shadow-xl rounded-lg">
+<section class="flex flex-col md:p-6 p-4 m-4 bg-white transition-shadow duration-300 shadow-lg hover:shadow-xl rounded-lg select-none">
   <!-- Header -->
   <ProjectItemHeader title={ projectData.title }
                      desc={ projectData.desc }
