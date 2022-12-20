@@ -10,7 +10,7 @@ import "devicon";
 import "@/styles/main.css";
 
 import { onMount } from "svelte";
-import loadWebFont from "@/lib/webfontloader";
+import loadWebFont from "$lib/webfontloader";
 
 async function onLoad() {
   await loadWebFont();
