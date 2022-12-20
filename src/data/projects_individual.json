@@ -8,8 +8,8 @@
       "TypeScript",
       "Twitter"
     ],
-    "year_from": 2022,
-    "year_to": -1,
+    "yearFrom": 2022,
+    "yearTo": -1,
     "status": "ACTIVE",
     "details": [
       "2020년에 개발했던 <a href='https://github.com/SDSkyKlouD/twitter-pwa-archive-cleaner'>twitter-pwa-archive-cleaner</a>의 리뉴얼 격의 토이 프로젝트.",
@@ -36,8 +36,8 @@
       "Docker",
       "Podman"
     ],
-    "year_from": 2021,
-    "year_to": 2022,
+    "yearFrom": 2021,
+    "yearTo": 2022,
     "status": "MAINTAINING",
     "details": [
       "모바일 게임 &lt;<a href='https://bluearchive.nexon.com/'>블루 아카이브</a>&gt;의 유명한 밈인 '<a href='https://coconut-emoji.tistory.com/49'>몰?루<a/>'에서 영감을 얻어 만든 토이 프로젝트.",
@@ -58,8 +58,8 @@
       "CSS3",
       "JavaScript"
     ],
-    "year_from": 2020,
-    "year_to": 2021,
+    "yearFrom": 2020,
+    "yearTo": 2021,
     "status": "COMPLETED",
     "details": [
       "군 복무 기간의 무료함을 달래기 위해 군 인트라넷 컴퓨터 상에서 개발했던 토이 프로젝트.",
@@ -82,8 +82,8 @@
       "JavaScript",
       "Twitter"
     ],
-    "year_from": 2019,
-    "year_to": 2019,
+    "yearFrom": 2019,
+    "yearTo": 2019,
     "status": "COMPLETED",
     "details": [
       "미세먼지 이슈가 한창 부상할 즈음, 기존 미세먼지 상태 포스팅 봇의 기능에 더해 멘션의 명령어<small>(시/도별 조회 등)</small>에 따라 반응하는 트위터 봇을 만들고자 하였음.",
@@ -102,8 +102,8 @@
       "dot-NET",
       "CSharp"
     ],
-    "year_from": 2019,
-    "year_to": 2019,
+    "yearFrom": 2019,
+    "yearTo": 2019,
     "status": "DISCONTINUED",
     "details": [
       "QuiqCompose의 부가 기능으로 활용하기 위한 .NET Standard 라이브러리 형태로 개발함.",
@@ -126,8 +126,8 @@
       "WPF",
       "Twitter"
     ],
-    "year_from": 2018,
-    "year_to": 2019,
+    "yearFrom": 2018,
+    "yearTo": 2019,
     "status": "COMPLETED",
     "details": [
       "트위터 타임라인 로딩으로 웹사이트가 느려지고 증가되는 데이터 소비량이 아까워서 개발했던 토이 프로젝트.",
@@ -148,8 +148,8 @@
       "JavaScript",
       "Twitter"
     ],
-    "year_from": 2018,
-    "year_to": 2018,
+    "yearFrom": 2018,
+    "yearTo": 2018,
     "status": "COMPLETED",
     "details": [
       "<a href='https://sites.google.com/view/evpvp/'>MikuMikuDance</a>에서 사용할 수 있는 모델 중 하나인 \"아피미쿠<sup>あぴミク</sup>\"를 사용해 만든 이미지를 <a href='https://www.pixiv.net/'>픽시브</a>, <a href='https://seiga.nicovideo.jp/'>니코니코정화</a>에서 랜덤으로 찾아 그 링크를 트윗으로 공유하는 간단한 봇.",
@@ -169,8 +169,8 @@
       "JavaScript",
       "jQuery"
     ],
-    "year_from": 2017,
-    "year_to": 2017,
+    "yearFrom": 2017,
+    "yearTo": 2017,
     "status": "COMPLETED",
     "details": [
       "Portal™ 게임 출시 10주년을 기념하여 제작한 웹페이지.",

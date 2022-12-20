@@ -4,14 +4,15 @@
     "title": "To. Anyone",
     "desc": "소통이 그리운 사람, 자신의 속마음을 털어놓고 위로받고 싶은 사람 모두를 위한 “랜덤 익명 편지 서비스”",
     "association": "SW마에스트로 13기",
+    "teamName": "TEAM GOYUKKURI",
     "charge": "팀장, 프론트엔드(웹) 개발",
     "stacks": [
       "Vuejs",
       "TypeScript",
       "SASS"
     ],
-    "year_from": 2022,
-    "year_to": 2022,
+    "yearFrom": 2022,
+    "yearTo": 2022,
     "status": "COMPLETED",
     "details": [
       ""
@@ -22,16 +23,17 @@
   {
     "id": "swm-mini-sosikmadang",
     "title": "소食마당",
-    "desc": "소마센터 주변 맛집의 정보와 리뷰를 한 곳에! <small>[SW마에스트로 미니프로젝트]</small>",
+    "desc": "<span class='font-semibold'>[미니프로젝트]</span> 소마센터 주변 맛집의 정보와 리뷰를 한 곳에!",
     "association": "SW마에스트로 13기",
+    "teamName": "미니프로젝트 40팀",
     "charge": "프론트엔드(웹) 개발",
     "stacks": [
       "Vuejs",
       "TypeScript",
       "SASS"
     ],
-    "year_from": 2022,
-    "year_to": 2022,
+    "yearFrom": 2022,
+    "yearTo": 2022,
     "status": "COMPLETED",
     "details": [
       "",
@@ -45,6 +47,7 @@
     "title": "풀(POOL)",
     "desc": "군 생활동안 성장하는 나의 이야기를 기록하고 공유하는, 자기개발 및 취업연결 SNS 플랫폼",
     "association": "2021 군장병 공개SW 온라인 해커톤",
+    "teamName": "YD(연등)",
     "charge": "프론트엔드(웹) 개발",
     "stacks": [
       "Vuejs",
@@ -52,8 +55,8 @@
       "TypeScript",
       "SASS"
     ],
-    "year_from": 2021,
-    "year_to": 2021,
+    "yearFrom": 2021,
+    "yearTo": 2021,
     "status": "COMPLETED",
     "details": [
       ""
@@ -66,13 +69,14 @@
     "title": "DISCO Maze",
     "desc": "",
     "association": "2013 광주교육정보원 IT영재원",
+    "teamName": "",
     "charge": "프론트엔드(웹) 개발",
     "stacks": [
       "Unity",
       "JavaScript"
     ],
-    "year_from": 2013,
-    "year_to": 2013,
+    "yearFrom": 2013,
+    "yearTo": 2013,
     "status": "COMPLETED",
     "details": [
       ""
