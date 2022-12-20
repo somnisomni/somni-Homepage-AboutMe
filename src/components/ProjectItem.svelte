@@ -18,9 +18,9 @@
                      yearFrom={ projectData.yearFrom }
                      yearTo={ projectData.yearTo }
                      repositoryUrl={ projectData.repositoryUrl }
-                     teamAssociation={ projectDataTeam().association }
-                     teamName={ projectDataTeam().teamName }
-                     teamCharge={ projectDataTeam().charge } />
+                     teamAssociation={ projectDataTeam.association }
+                     teamName={ projectDataTeam.teamName }
+                     teamCharge={ projectDataTeam.charge } />
   { /if }
 
   <!-- Details -->
@@ -45,7 +45,5 @@ export let projectData: ProjectData;
 export let showDetails: boolean = true;
 export let isTeamProject: boolean = false;
 
-function projectDataTeam(): ProjectDataTeam {
-  return projectData as ProjectDataTeam;
-}
+$: projectDataTeam = projectData as ProjectDataTeam;
 </script>
