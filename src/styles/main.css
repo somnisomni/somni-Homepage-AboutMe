@@ -22,7 +22,8 @@ a:not(.no-underline) {
   @apply relative;
 }
 
-a:not(.no-underline):hover::after {
+a:not(.no-underline):hover::after,
+a:not(.no-underline):focus::after {
   transform: scaleX(1);
 }
 
