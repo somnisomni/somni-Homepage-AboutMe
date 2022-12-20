@@ -1,4 +1,4 @@
-<section class="flex flex-col md:p-6 p-4 m-4 bg-white transition-shadow duration-300 shadow-lg hover:shadow-xl rounded-lg select-none">
+<section class="project-item flex flex-col md:p-6 p-4 m-4 bg-white transition-all duration-300 shadow-md hover:shadow-xl rounded-lg select-none">
   <!-- Header -->
   <ProjectItemHeader title={ projectData.title }
                      desc={ projectData.desc }
@@ -50,3 +50,14 @@ export let isTeamProject: boolean = false;
 
 $: projectDataTeam = projectData as ProjectDataTeam;
 </script>
+
+<style>
+.project-item {
+  transform: translateY(0);
+}
+
+.project-item:hover,
+.project-item:focus {
+  transform: translateY(-1.5%);
+}
+</style>
