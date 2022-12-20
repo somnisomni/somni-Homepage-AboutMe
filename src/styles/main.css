@@ -18,6 +18,25 @@ small {
   font-size: smaller;
 }
 
+a:not(.no-underline) {
+  @apply relative;
+}
+
+a:not(.no-underline):hover::after {
+  transform: scaleX(1);
+}
+
+a:not(.no-underline)::after {
+  @apply absolute bg-current transition-transform duration-300;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+
 /* placeholder for missing devicon */
 .devicon-wpf-plain {
   font-weight: 900;
