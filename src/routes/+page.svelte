@@ -7,7 +7,7 @@
     세부사항 표시: <input type="checkbox" bind:checked={ showProjectItemsDetails } />
   
     <div>
-      <h1>팀 프로젝트</h1>
+      <h1 class="text-4xl text-center font-bold my-4">팀 프로젝트</h1>
   
       <div class="grid 2xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 items-start mx-auto px-4 pb-4 md:px-8">
         {#each ProjectsTeam as project}
@@ -18,8 +18,8 @@
       </div>
     </div>
   
-    <div>
-      <h1>개인 프로젝트</h1>
+    <div class="mt-8">
+      <h1 class="text-4xl text-center font-bold my-4">개인 프로젝트</h1>
   
       <div class="grid 2xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 items-start mx-auto px-4 pb-4 md:px-8">
         {#each ProjectsIndividual as project}
