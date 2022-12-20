@@ -30,7 +30,10 @@
 
   <!-- App link -->
   { #if projectData.appUrl }
-    <ProjectItemAppLink appUrl={ projectData.appUrl } />
+    <ProjectItemAppLink url={ projectData.appUrl } />
+  { :else if isTeamProject && projectDataTeam.pageUrl }
+    <ProjectItemAppLink url={ projectDataTeam.pageUrl }
+                        text="관련 페이지" />
   { /if }
 </section>
 
