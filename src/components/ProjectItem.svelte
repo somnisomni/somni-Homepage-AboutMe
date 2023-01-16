@@ -45,8 +45,8 @@ import ProjectItemDetails from "./ProjectItemDetails.svelte";
 import ProjectItemAppLink from "./ProjectItemAppLink.svelte";
 
 export let projectData: ProjectData;
-export let showDetails: boolean = true;
-export let isTeamProject: boolean = false;
+export let showDetails = true;
+export let isTeamProject = false;
 
 $: projectDataTeam = projectData as ProjectDataTeam;
 </script>

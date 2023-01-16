@@ -36,5 +36,5 @@ import ProjectsIndividual from "@/data/projects_individual.json";
 import ProjectsTeam from "@/data/projects_team.json";
 import ProjectItem from "@/components/ProjectItem.svelte";
 
-let showProjectItemsDetails: boolean = false;
+let showProjectItemsDetails = false;
 </script>

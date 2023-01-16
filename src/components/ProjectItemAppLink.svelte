@@ -5,5 +5,5 @@
 
 <script lang="ts">
 export let url: string;
-export let text: string = "배포/릴리즈";
+export let text = "배포/릴리즈";
 </script>

@@ -40,8 +40,8 @@
 <script lang="ts">
 import type { ProjectStatus } from "$lib/interfaces";
 
-export let showDetails: boolean = true;
-export let isTeamProject: boolean = false;
+export let showDetails = true;
+export let isTeamProject = false;
 
 export let status: ProjectStatus;
 export let yearFrom: number;
