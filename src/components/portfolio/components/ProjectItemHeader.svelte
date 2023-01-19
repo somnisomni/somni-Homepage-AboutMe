@@ -7,7 +7,7 @@
       { #each stacks as stack }
         <i class="devicon-{ stack.toLowerCase() }-original devicon-{ stack.toLowerCase() }-plain colored mx-1"
             style="font-size: 70%"
-            title={ stack } />
+            title={ getDeviconAltText(stack) } />
       { /each }
     </div>
   </div>
@@ -16,6 +16,8 @@
 </header>
 
 <script lang="ts">
+import getDeviconAltText from "@/lib/semantic-devicon";
+
 export let title: string;
 export let desc: string;
 export let stacks: string[];
