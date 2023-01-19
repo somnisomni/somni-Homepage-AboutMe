@@ -34,7 +34,7 @@
 <script lang="ts">
 import ProjectsIndividual from "@/data/projects_individual.json";
 import ProjectsTeam from "@/data/projects_team.json";
-import ProjectItem from "@/components/ProjectItem.svelte";
+import ProjectItem from "@/components/portfolio/components/ProjectItem.svelte";
 
 let showProjectItemsDetails = false;
 </script>
