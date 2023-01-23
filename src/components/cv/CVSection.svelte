@@ -52,7 +52,7 @@ import ProjectItem from "@/components/cv/components/ProjectItem.svelte";
 let showProjectItemsDetails = false;
 </script>
 
-<style scoped>
+<style>
 .s-title {
   @apply text-4xl text-center font-bold my-4;
 }
