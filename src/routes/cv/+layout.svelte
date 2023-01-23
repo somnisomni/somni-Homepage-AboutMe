@@ -1,6 +1,7 @@
 <div>
-  Hooray
+  <slot />
 </div>
 
 <script lang="ts">
+import "devicon";
 </script>

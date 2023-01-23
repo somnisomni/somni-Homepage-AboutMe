@@ -1,4 +1,4 @@
-<div class="bg-slate-50 w-full min-h-full pb-8">
+<div class="bg-slate-50 text-zinc-900 w-full min-h-full pb-8">
   <SomniHeader />
 
   <main class="container mx-auto px-4">

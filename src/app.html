@@ -5,10 +5,19 @@
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		%sveltekit.head%
+
+		<style>
+			/* Important style */
+			body {
+				background-color: black;
+				color: rgb(241, 245, 249);
+			}
+		</style>
 	</head>
 
-	<body data-sveltekit-preload-data="hover">
-		<div class="contents text-zinc-900 break-keep">
+	<body data-sveltekit-preload-data="hover"
+				class="bg-black text-slate-100">
+		<div class="contents break-keep">
 			%sveltekit.body%
 		</div>
 	</body>

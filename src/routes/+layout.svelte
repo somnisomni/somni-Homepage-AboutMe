@@ -3,22 +3,36 @@
 </svelte:head>
 <svelte:window on:load={ onLoad } />
 
-{#if !loaded}
-  <div>Loading</div>
+{#if !loadingSceneExitAnimCompleted}
+  <div out:fade>
+    <SceneBootUp exit={ loaded }
+                 bind:exitCompleted={ loadingSceneExitAnimCompleted }/>
+  </div>
 {:else}
-  <slot />
+  <div in:fade>
+    <slot />
+  </div>
 {/if}
 
 <script lang="ts">
-import "devicon";
+/* Library / Stylesheet imports */
 import "@/styles/main.css";
-
 import { onMount } from "svelte";
+import { fade } from "svelte/transition";
 import loadWebFont from "$lib/webfontloader";
+
+/* Component imports */
+import SceneBootUp from "@/components/landing/SceneBootUp.svelte";
 
 let webFontLoaded = false;
 let windowLoaded = false;
-$: loaded = webFontLoaded && windowLoaded;
+let loadingSceneMinimumDurationPassed = false;
+let loadingSceneExitAnimCompleted = false;
+$: loaded = webFontLoaded && windowLoaded && loadingSceneMinimumDurationPassed;
+
+setTimeout(() => {
+  loadingSceneMinimumDurationPassed = true;
+}, 2000);
 
 async function onLoad() {
   await loadWebFont(() => {
