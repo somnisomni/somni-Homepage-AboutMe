@@ -47,8 +47,7 @@
 import ProjectsIndividual from "@/data/projects_individual.json";
 import ProjectsTeam from "@/data/projects_team.json";
 import ContributionsOpenSource from "@/data/contributions_opensource.json";
-import ProjectItem from "@/components/portfolio/components/ProjectItem.svelte";
-    import { each } from "svelte/internal";
+import ProjectItem from "@/components/cv/components/ProjectItem.svelte";
 
 let showProjectItemsDetails = false;
 </script>

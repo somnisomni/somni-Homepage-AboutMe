@@ -2,11 +2,11 @@
   <SomniHeader />
 
   <main class="container mx-auto px-4">
-    <PortfolioSection />
+    <CVSection />
   </main>
 </div>
 
 <script lang="ts">
 import SomniHeader from "@/components/header/somniHeader.svelte";
-import PortfolioSection from "@/components/portfolio/PortfolioSection.svelte";
+import CVSection from "@/components/cv/CVSection.svelte";
 </script>
