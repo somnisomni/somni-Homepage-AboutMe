@@ -3,7 +3,11 @@
 </svelte:head>
 <svelte:window on:load={ onLoad } />
 
-<slot />
+{#if !loaded}
+  <div>Loading</div>
+{:else}
+  <slot />
+{/if}
 
 <script lang="ts">
 import "devicon";
@@ -12,8 +16,13 @@ import "@/styles/main.css";
 import { onMount } from "svelte";
 import loadWebFont from "$lib/webfontloader";
 
+let webFontLoaded = false;
+$: loaded = webFontLoaded;
+
 async function onLoad() {
-  await loadWebFont();
+  await loadWebFont(() => {
+    webFontLoaded = true;
+  });
 }
 onMount(onLoad);
 </script>
