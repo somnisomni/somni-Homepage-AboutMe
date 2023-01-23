@@ -17,12 +17,15 @@ import { onMount } from "svelte";
 import loadWebFont from "$lib/webfontloader";
 
 let webFontLoaded = false;
-$: loaded = webFontLoaded;
+let windowLoaded = false;
+$: loaded = webFontLoaded && windowLoaded;
 
 async function onLoad() {
   await loadWebFont(() => {
     webFontLoaded = true;
   });
+
+  windowLoaded = true;
 }
 onMount(onLoad);
 </script>
