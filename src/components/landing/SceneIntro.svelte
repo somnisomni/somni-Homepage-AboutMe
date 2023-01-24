@@ -1,8 +1,8 @@
 <div id="scene-intro"
      class="bg-black text-slate-100 flex flex-col absolute left-0 top-0 right-0 bottom-0 z-10 pl-4 sm:pl-12 justify-center items-start w-screen h-screen">
   <div class="cont">
-    <div id="hello" class="text-5xl sm:text-7xl font-thin mb-2">Hello,</div>
-    <div id="visitor" class="text-6xl sm:text-8xl font-semibold">{ visitorText }.</div>
+    <div id="hello" class="text-5xl sm:text-7xl font-thin mb-2 opacity-0">Hello,</div>
+    <div id="visitor" class="text-6xl sm:text-8xl font-semibold opacity-0">{ visitorText }.</div>
   </div>
 </div>
 
@@ -23,7 +23,7 @@ onMount(() => {
   }
 
   anime.timeline({
-    targets: "#hello, #visitor",
+    targets: "#scene-intro #hello, #scene-intro #visitor",
     duration: 1000,
   }).add({  // Setup
     translateX: "25%",
