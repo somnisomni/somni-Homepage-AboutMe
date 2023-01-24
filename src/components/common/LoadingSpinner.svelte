@@ -1,11 +1,8 @@
 <div class="loading-spinner-parent">
   <div class="loading-spinner">
     <div class="dot d1" />
-
-    <div class="bottom-dots">
-      <div class="dot d2" />
-      <div class="dot d3" />
-    </div>
+    <div class="dot d2" />
+    <div class="dot d3" />
   </div>
 </div>
 
@@ -26,20 +23,22 @@ onMount(() => {
   // Dot in/out
   const dotInOutAnimeCommonProps: anime.AnimeParams = {
     opacity: 1,
+    scale: [0, 1],
     direction: "alternate",
     easing: "easeInOutCubic",
     loop: true,
-    duration: 750,
-    endDelay: 50,
+    duration: 1000,
+    delay: 100,
+    endDelay: 100,
   };
 
-  [[".d1", 0, "-1em"], [".d2", "-1em", "1em"], [".d3", "1em", "1em"]].forEach((v, i) => {
+  [[".d1", 0, -1], [".d2", -1, 1], [".d3", 1, 1]].forEach((v, i) => {
     setTimeout(() => {
       anime({
         ...dotInOutAnimeCommonProps,
         targets: `.loading-spinner ${v[0]}`,
-        translateX: v[1],
-        translateY: v[2],
+        translateX: `${(v[1] as number) * 1}em`,
+        translateY: `${(v[2] as number) * 1}em`,
       });
     }, i * 200);
   });
@@ -61,6 +60,7 @@ onMount(() => {
 }
 
 .loading-spinner .dot {
+  position: absolute;
   width: 1em;
   height: 1em;
   margin: 0.125em;
@@ -68,10 +68,5 @@ onMount(() => {
   background-color: currentColor;
 
   opacity: 0;
-}
-
-.loading-spinner .bottom-dots {
-  display: flex;
-  flex-direction: row;
 }
 </style>
