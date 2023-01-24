@@ -39,6 +39,6 @@ onMount(() => {
     opacity: 0,
     easing: "easeInQuint",
     delay: anime.stagger(250),
-  }, "+=1000").finished.then(() => { animationCompleted = true; });
+  }, "+=500").finished.then(() => { animationCompleted = true; });
 });
 </script>
