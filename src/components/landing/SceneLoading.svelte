@@ -1,6 +1,6 @@
 <div id="scene-boot-up"
      class="flex flex-col absolute left-0 top-0 right-0 bottom-0 z-50 justify-center items-center w-screen h-screen">
-  <span class="anim2 font-thin text-6xl mb-16">Loading…</span>
+  <span class="anim2 font-thin text-5xl sm:text-6xl mb-16">Loading…</span>
 
   <div class="anim1">
     <LoadingSpinner />
