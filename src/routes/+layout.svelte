@@ -5,7 +5,7 @@
 
 {#if !loadingSceneExitAnimCompleted}
   <div out:fade>
-    <SceneBootUp exit={ loaded }
+    <SceneLoading exit={ loaded }
                  bind:exitCompleted={ loadingSceneExitAnimCompleted }/>
   </div>
 {:else}
@@ -22,7 +22,7 @@ import { fade } from "svelte/transition";
 import loadWebFont from "$lib/webfontloader";
 
 /* Component imports */
-import SceneBootUp from "@/components/landing/SceneBootUp.svelte";
+import SceneLoading from "@/components/landing/SceneLoading.svelte";
 
 let webFontLoaded = false;
 let windowLoaded = false;
