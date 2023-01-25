@@ -9,10 +9,13 @@
   <div class="anim3 font-thin text-sm text-center fixed left-0 right-0 bottom-8 w-screen">loading essential resources…</div>
 </div>
 
+<div class="hidden"><!-- Wallpaper preloader --> <Wallpaper /> </div>
+
 <script lang="ts">
 import { onMount } from "svelte";
 import anime from "animejs";
 import LoadingSpinner from "../common/LoadingSpinner.svelte";
+import Wallpaper from "./components/Wallpaper.svelte";
 
 export let exit = false;
 export let exitCompleted = false;
