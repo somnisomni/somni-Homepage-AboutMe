@@ -9,16 +9,15 @@
       "Twitter"
     ],
     "yearFrom": 2022,
-    "yearTo": -1,
-    "status": "ACTIVE",
+    "yearTo": 2022,
+    "status": "DISCONTINUED",
     "details": [
+      "❌ <a href='https://twitter.com/TwitterDev/status/1621026986784337922'>트위터 API 전면 유료화</a>로 인한 개발 중단",
       "2020년에 개발했던 <a href='https://github.com/SDSkyKlouD/twitter-pwa-archive-cleaner'>twitter-pwa-archive-cleaner</a>의 리뉴얼 격의 토이 프로젝트.",
       "'트윗 청소' 기능을 유료로 제공하는 제3자 서비스의 대안으로서 개발 중.",
       "CLI 프로그램의 형태로, 명령줄에서 명령어/파라미터를 파싱하는 기능을 직접 구현.",
       "이 프로그램을 사용하기 위해선 사용자가 직접 트위터 개발자 앱을 등록해야하며, 이후 과정(계정 로그인 등)은 프로그램에 구현되어 있음.",
-      "트위터 계정의 트윗 아카이브 데이터를 사용하여 계정 내 트윗을 API를 통해 삭제.",
-      "[구현 중] RT/마음 수나 미디어의 존재 여부 등으로 일부 트윗을 청소로부터 제외하는 필터링 기능.",
-      "[추후 구현 예정] 마음함 청소 기능."
+      "트위터 계정의 트윗 아카이브 데이터를 사용하여 계정 내 트윗을 API를 통해 삭제."
     ],
     "repositoryUrl": "https://github.com/somnisomni/Twiper",
     "appUrl": "https://github.com/somnisomni/Twiper/releases"
