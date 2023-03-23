@@ -1,0 +1,20 @@
+[
+  {
+    "id": "korean",
+    "title": "한국어",
+    "details": [
+    ]
+  },
+  {
+    "id": "english",
+    "title": "영어",
+    "details": [
+    ]
+  },
+  {
+    "id": "japanese",
+    "title": "일본어",
+    "details": [
+    ]
+  }
+]

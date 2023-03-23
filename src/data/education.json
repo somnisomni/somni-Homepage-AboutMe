@@ -1,0 +1,16 @@
+[
+  {
+    "id": "univ-ck-game",
+    "title": "청강문화산업대학교",
+    "department": "게임전공",
+    "yearFrom": 2023,
+    "yearTo": -1
+  },
+  {
+    "id": "high-cmt-robot",
+    "title": "전북기계공업고등학교",
+    "department": "로봇자동화과 로봇제어전공",
+    "yearFrom": 2016,
+    "yearTo": 2019
+  }
+]
