@@ -1,6 +1,6 @@
 <div id="scene-boot-up"
      class="flex flex-col absolute left-0 top-0 right-0 bottom-0 z-50 justify-center items-center w-full h-full">
-  <span class="anim2 font-thin text-5xl sm:text-6xl">Loading…</span>
+  <span class="anim2 font-bold text-5xl sm:text-6xl">Loading…</span>
 
   <div class="anim1 mt-16">
     <LoadingSpinner />
@@ -9,13 +9,10 @@
   <div class="anim3 font-thin text-sm text-center fixed left-0 right-0 bottom-8 w-screen">loading essential resources…</div>
 </div>
 
-<div class="hidden"><!-- Wallpaper preloader --> <Wallpaper /> </div>
-
 <script lang="ts">
 import { onMount } from "svelte";
 import anime from "animejs";
-import LoadingSpinner from "../common/LoadingSpinner.svelte";
-import Wallpaper from "./components/Wallpaper.svelte";
+import LoadingSpinner from "./common/LoadingSpinner.svelte";
 
 export let exit = false;
 export let exitCompleted = false;

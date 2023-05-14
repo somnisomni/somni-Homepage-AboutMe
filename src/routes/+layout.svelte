@@ -1,12 +1,12 @@
 <svelte:head>
-  <title>somni::AboutMe</title>
+  <title>somni</title>
 </svelte:head>
 <svelte:window on:load={ onLoad } />
 
 {#if !loadingSceneExitAnimCompleted}
   <div out:fade>
     <SceneLoading exit={ loaded }
-                 bind:exitCompleted={ loadingSceneExitAnimCompleted }/>
+                  bind:exitCompleted={ loadingSceneExitAnimCompleted }/>
   </div>
 {:else}
   <div in:fade>
@@ -22,7 +22,7 @@ import { fade } from "svelte/transition";
 import loadWebFont from "$lib/webfontloader";
 
 /* Component imports */
-import SceneLoading from "@/components/landing/SceneLoading.svelte";
+import SceneLoading from "@/components/SceneLoading.svelte";
 
 let webFontLoaded = false;
 let windowLoaded = false;
