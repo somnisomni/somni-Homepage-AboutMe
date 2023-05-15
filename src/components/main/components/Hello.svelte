@@ -1,6 +1,6 @@
 <p>Hello, <strong class="font-medium">{ visitedText }</strong>!</p>
 <p>I'm <strong class="font-bold">somni</strong>, an <strong class="font-medium">ordinary developer</strong></p>
-<p>who <code class="text-xl md:text-3xl transition-all">{ CODE_SNIPPET }</code></p>
+<p>who <code class="code-snippet text-xl md:text-3xl">{ CODE_SNIPPET }</code></p>
 
 <script lang="ts">
 import { LOCALSTORAGE_PROP_VISITED } from "@/lib/constants";
@@ -18,3 +18,9 @@ onMount(() => {
   }
 })
 </script>
+
+<style>
+.code-snippet {
+  transition: font-size 150ms;
+}
+</style>

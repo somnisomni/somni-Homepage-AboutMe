@@ -4,7 +4,7 @@
 
   <main class="z-10 font-extralight text-2xl md:text-4xl p-6 md:p-8 xl:p-16 transition-all">
     <h1 class="text-6xl font-bold">somni</h1>
-    <hr class="w-32 my-4"/>
+    <hr class="!w-32 my-6 border-b-2 border-current"/>
 
     <Hello />
     <br />
@@ -44,11 +44,14 @@ function rotateSpaceArea(spaceAreaParent: HTMLElement) {
   spaceAreaParent.getElementsByTagName("div")[0].setAttribute("style", `--tw-rotate: ${angle}deg`);
 }
 
-function scroll(main: HTMLElement, spaceAreaBL: HTMLElement) {
+function scroll(main: HTMLElement, spaceAreaBL: HTMLElement, spaceAreaTR: HTMLElement) {
   const sablTopOffset = spaceAreaBL.getBoundingClientRect().top;
   const sablRightOffset = spaceAreaBL.getBoundingClientRect().right;
+  // const satrLeftOffset = spaceAreaTR.getBoundingClientRect().left;
+  // const satrBottomOffset = spaceAreaTR.getBoundingClientRect().bottom;
 
   for(const elem of (main.querySelectorAll("& > *") as NodeListOf<HTMLElement>)) {
+    // const topOffset = elem.getBoundingClientRect().top;
     const bottomOffset = elem.getBoundingClientRect().bottom;
 
     if(bottomOffset > sablTopOffset) {
@@ -59,6 +62,15 @@ function scroll(main: HTMLElement, spaceAreaBL: HTMLElement) {
     } else {
       elem.style.transform = "";
     }
+
+    // if(topOffset < satrBottomOffset) {
+    //   const ratio = (satrBottomOffset - topOffset) / satrBottomOffset;
+    //   const widthMinusAmount = satrLeftOffset * ratio;
+
+    //   elem.style.width = `calc(100% - ${widthMinusAmount}px)`;
+    // } else {
+    //   elem.style.width = "";
+    // }
   }
 }
 
@@ -66,6 +78,7 @@ onMount(() => {
   const MAIN_ELEMENT = document.getElementsByTagName("main")[0];
   const SPACE_AREAS = document.querySelectorAll(".space-area") as NodeListOf<HTMLElement>;
   const SPACE_AREA_BL = document.querySelector(".space-area.bottom-left") as HTMLElement;
+  const SPACE_AREA_TR = document.querySelector(".space-area.top-right") as HTMLElement;
   let frameTick = false;
 
   function rotateAllSpaceArea() {
@@ -77,7 +90,7 @@ onMount(() => {
   function processScroll() {
     if(!frameTick) {
       window.requestAnimationFrame(() => {
-        scroll(MAIN_ELEMENT, SPACE_AREA_BL);
+        scroll(MAIN_ELEMENT, SPACE_AREA_BL, SPACE_AREA_TR);
         frameTick = false;
       });
 
