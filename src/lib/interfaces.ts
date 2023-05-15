@@ -19,3 +19,9 @@ export interface ProjectDataTeam extends ProjectData {
   charge: string,
   pageUrl?: string,
 }
+
+export interface ContributionItem {
+  desc: string,
+  pullRequest?: number,
+  directCommit?: string,
+}
