@@ -1,3 +1,4 @@
 :root {
   --fallback-font-family: "Noto Sans CJK KR", "Noto Sans KR", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, system-ui, "Roboto", "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
-} 
+  --monospace-font-family: "D2Coding", "Noto Sans Mono CJK KR", "Noto Sans Mono KR", "NanumGothicCoding", "Noto Sans Mono", ui-monospace, monospace;
+}

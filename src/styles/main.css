@@ -41,6 +41,10 @@ a:not(.no-underline)::after {
   transform-origin: left center;
 }
 
+code, kbd, samp, pre {
+  font-family: var(--monospace-font-family);
+}
+
 /* placeholder for missing devicon */
 .devicon-wpf-plain {
   font-weight: 900;
