@@ -24,6 +24,10 @@ $: if(codeWithInputElement) {
     if(event.key === " " || event.key === "Enter") {
       event.preventDefault();
     }
+
+    if(codeWithInput.length >= 6 && (event.key !== "Backspace" && event.key !== "Delete" && !event.key.startsWith("Arrow"))) {
+      event.preventDefault();
+    }
   });
   codeWithInputElement.addEventListener("focusout", () => {
     if(!codeWithInput) codeWithInput = "DREAMS";
