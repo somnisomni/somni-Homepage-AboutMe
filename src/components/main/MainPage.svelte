@@ -1,8 +1,9 @@
 <div>
-  <div class="space-area bottom-left"><div /></div>
-  <div class="space-area top-right"><div /></div>
+  <div bind:this={ spaceAreaBL } class="space-area bottom-left"><div /></div>
+  <div bind:this={ spaceAreaTR } class="space-area top-right"><div /></div>
 
-  <main class="z-10 font-extralight text-2xl md:text-4xl p-6 md:p-8 xl:p-16 transition-all">
+  <main bind:this={ mainElement }
+        class="z-10 font-extralight text-2xl md:text-4xl p-6 md:p-8 xl:p-16 transition-all">
     <h1 class="text-6xl font-bold">somni</h1>
     <hr class="!w-32 my-6 border-b-2 border-current"/>
 
@@ -35,6 +36,10 @@
 import anime from "animejs";
 import { onMount } from "svelte";
 import Hello from "./components/Hello.svelte";
+
+let spaceAreaBL: HTMLElement;
+let spaceAreaTR: HTMLElement;
+let mainElement: HTMLElement;
 
 function rotateSpaceArea(spaceAreaParent: HTMLElement) {
   const parentHeight = spaceAreaParent.getBoundingClientRect().height;
@@ -75,22 +80,17 @@ function scroll(main: HTMLElement, spaceAreaBL: HTMLElement, spaceAreaTR: HTMLEl
 }
 
 onMount(() => {
-  const MAIN_ELEMENT = document.getElementsByTagName("main")[0];
-  const SPACE_AREAS = document.querySelectorAll(".space-area") as NodeListOf<HTMLElement>;
-  const SPACE_AREA_BL = document.querySelector(".space-area.bottom-left") as HTMLElement;
-  const SPACE_AREA_TR = document.querySelector(".space-area.top-right") as HTMLElement;
   let frameTick = false;
 
   function rotateAllSpaceArea() {
-    for(const elem of SPACE_AREAS) {
-      rotateSpaceArea(elem);
-    }
+    rotateSpaceArea(spaceAreaBL);
+    rotateSpaceArea(spaceAreaTR);
   }
 
   function processScroll() {
     if(!frameTick) {
       window.requestAnimationFrame(() => {
-        scroll(MAIN_ELEMENT, SPACE_AREA_BL, SPACE_AREA_TR);
+        scroll(mainElement, spaceAreaBL, spaceAreaTR);
         frameTick = false;
       });
 
