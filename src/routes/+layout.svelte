@@ -32,7 +32,7 @@ $: loaded = webFontLoaded && windowLoaded && loadingSceneMinimumDurationPassed;
 
 setTimeout(() => {
   loadingSceneMinimumDurationPassed = true;
-}, 2000);
+}, 1000);
 
 async function onLoad() {
   await loadWebFont(() => {
