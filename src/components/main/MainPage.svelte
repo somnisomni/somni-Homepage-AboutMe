@@ -10,6 +10,8 @@
     <Hello />
     <br /><br />
     <AlsoIAm />
+    <br /><br />
+    <Links />
   </main>
 </div>
 
@@ -18,6 +20,7 @@ import anime from "animejs";
 import { onMount } from "svelte";
 import Hello from "./components/Hello.svelte";
 import AlsoIAm from "./components/AlsoIAm.svelte";
+import Links from "./components/Links.svelte";
 
 let spaceAreaBL: HTMLElement;
 let spaceAreaTR: HTMLElement;
@@ -156,14 +159,14 @@ main > * {
 
 @media (min-width: 1280px) {
   .space-area.top-right {
-    width: 40%;
-    height: 80vw;
+    width: 50%;
+    height: 100vw;
     max-width: initial;
     max-height: initial;
   }
 
   .space-area.top-right > div {
-    height: 80vw;
+    height: 100vw;
     max-width: initial;
     max-height: initial;
   }
