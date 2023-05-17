@@ -1,4 +1,4 @@
-<code class="code-snippet text-xl md:text-3xl whitespace-pre { codeColor }">writeCode(lines, With.<code bind:this={ codeWithInputElement } bind:textContent={ codeWithInput } contenteditable="true" autocapitalize="true" class="outline-none border-b-transparent focus:border-b-2 focus:border-b-current">{ codeWithInput }</code>);</code> <span>{ codeEmoji }</span>
+<code class="code-snippet text-xl md:text-3xl whitespace-pre-wrap { codeColor }">writeCode(lines, With.<code bind:this={ codeWithInputElement } bind:textContent={ codeWithInput } contenteditable="true" autocapitalize="true" class="outline-none border-b-transparent focus:border-b-2 focus:border-b-current">{ codeWithInput }</code>);</code> <span>{ codeEmoji }</span>
 
 <script lang="ts">
 import { onMount } from "svelte";
