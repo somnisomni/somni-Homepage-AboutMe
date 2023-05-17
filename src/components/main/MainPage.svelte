@@ -3,32 +3,13 @@
   <div bind:this={ spaceAreaTR } class="space-area top-right"><div /></div>
 
   <main bind:this={ mainElement }
-        class="z-10 font-extralight text-2xl md:text-4xl p-6 md:p-8 xl:p-16 transition-all">
+        class="z-10 font-extralight text-xl md:text-3xl p-6 md:p-8 xl:p-16 transition-all">
     <h1 class="text-6xl font-bold">somni</h1>
     <hr class="!w-32 my-6 border-b-2 border-current"/>
 
     <Hello />
-    <br />
-    <p>Lorem ipsum</p>
-    <p>Lorem ipsum</p>
-    <p>Lorem ipsum</p>
-    <p>Lorem ipsum</p>
-    <p>Lorem ipsum</p>
-    <p>Lorem ipsum</p>
-    <p>Lorem ipsum</p>
-    <p>Lorem ipsum</p>
-    <p>Lorem ipsum</p>
-    <p>Lorem ipsum</p>
-    <p>Lorem ipsum</p>
-    <p>Lorem ipsum</p>
-    <p>Lorem ipsum</p>
-    <p>Lorem ipsum</p>
-    <p>Lorem ipsum</p>
-    <p>Lorem ipsum</p>
-    <p>Lorem ipsum</p>
-    <p>Lorem ipsum</p>
-    <p>Lorem ipsum</p>
-    <p>Lorem ipsum</p>
+    <br /><br />
+    <AlsoIAm />
   </main>
 </div>
 
@@ -36,6 +17,7 @@
 import anime from "animejs";
 import { onMount } from "svelte";
 import Hello from "./components/Hello.svelte";
+import AlsoIAm from "./components/AlsoIAm.svelte";
 
 let spaceAreaBL: HTMLElement;
 let spaceAreaTR: HTMLElement;
@@ -55,7 +37,7 @@ function scroll(main: HTMLElement, spaceAreaBL: HTMLElement, spaceAreaTR: HTMLEl
   // const satrLeftOffset = spaceAreaTR.getBoundingClientRect().left;
   // const satrBottomOffset = spaceAreaTR.getBoundingClientRect().bottom;
 
-  for(const elem of (main.querySelectorAll("& > *") as NodeListOf<HTMLElement>)) {
+  for(const elem of (main.querySelectorAll("& > *:not(ul), & > ul > *") as NodeListOf<HTMLElement>)) {
     // const topOffset = elem.getBoundingClientRect().top;
     const bottomOffset = elem.getBoundingClientRect().bottom;
 
@@ -119,8 +101,24 @@ onMount(() => {
 </script>
 
 <style>
+main {
+  line-height: 1.33 !important;
+}
+
 main > * {
   transform-origin: left center;
+}
+
+:global(.desc-block) {
+  @apply relative inline-block px-2;
+  transition: padding-bottom 150ms, font-size 150ms;
+}
+
+:global(.desc-block::before) {
+  @apply -z-10 bg-slate-300 absolute left-0 right-0 bottom-0 w-full h-1/2;
+
+  content: "";
+  display: block;
 }
 
 .space-area {
@@ -131,7 +129,7 @@ main > * {
 }
 
 .space-area > div {
-  @apply w-full scale-y-150 rotate-0 bg-zinc-800;
+  @apply w-full scale-y-150 rotate-0 bg-zinc-800 text-zinc-800;
   --tw-rotate: -30deg;
   height: 40vw;
   max-width: 300px;
@@ -144,6 +142,7 @@ main > * {
 
 .space-area.bottom-left > div {
   @apply origin-bottom-right;
+  box-shadow: inset -0.5em 0.5em 1em rgba(0, 0, 0, 0.5);
 }
 
 .space-area.top-right {
@@ -152,6 +151,7 @@ main > * {
 
 .space-area.top-right > div {
   @apply origin-top-left;
+  box-shadow: inset 0.5em -0.5em 1em currentColor;
 }
 
 @media (min-width: 1280px) {
