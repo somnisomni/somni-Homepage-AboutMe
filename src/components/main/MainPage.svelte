@@ -154,7 +154,7 @@ main > * {
 
 .space-area.top-right > div {
   @apply origin-top-left;
-  box-shadow: inset 0.5em -0.5em 1em currentColor;
+  box-shadow: inset 0.5em -0.5em 1em rgba(0, 0, 0, 0.5);
 }
 
 @media (min-width: 1280px) {
