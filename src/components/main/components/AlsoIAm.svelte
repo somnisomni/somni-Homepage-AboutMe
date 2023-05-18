@@ -5,7 +5,7 @@
 <p class="ml-4 mb-4">at <strong>Chungkang College of Cultural Industries</strong></p>
 
 <span class="desc-block text-2xl md:text-4xl pb-0 md:pb-2">A <strong class="font-medium">TRANSLATOR</strong></span><br />
-<p class="ml-4">A hobbyist <strong>language translation volunteer</strong></p>
+<p class="ml-4">Hobbyist <strong>language translation volunteer</strong></p>
 <p class="ml-4 mb-4 font-thin">(usually EN/JA → KR)</p>
 
 <script lang="ts">
